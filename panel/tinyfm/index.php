@@ -1,10 +1,9 @@
 <?php
-session_name('PanelanSID'); session_start();
-if (empty($_SESSION['logged_in'])) die('401');
-
 //Default Configuration
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"calc_folder":false,"theme":"light"}';
 
+session_name('PanelanSID'); session_start();
+if (empty($_SESSION['logged_in'])) die('401');
 
 /**
  * H3K | Tiny File Manager V2.4.8
